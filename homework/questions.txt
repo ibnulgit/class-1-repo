@@ -1,5 +1,5 @@
 Here are homework questions for you to recap the concepts
-we went through in class.
+we went through in class. Small change, but dont worry.
 
 1. Navigating the terminal
   a, What is a root directory?
