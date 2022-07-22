@@ -68,28 +68,39 @@ git  add file -name.txt
   - from the staging area to local repository
    git commit -m " our commit"
   e, What does git status do ?
+  Ans. The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
    
   f, How would you check your commit history?
+  Ans. "git log" command is used to view the commit history and display the necessary information of the git repository. This command displays the latest git commits information in chronological order, and the last commit will be displayed first.
 
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
      To connect your local repository to the remote one (if you were to create it on github)
      you need to add remote to it. Briefly describe, what would be the commands to do this ?
+     Ans.To add remote to local repository we must have to be in that directory, then we use (git remote add origin "SSH/HTML link of remote repository") command.
 
     - How do you check whether you already have some github/remote repository connected to your local one?
+    Ans.  To check that is there any remote repository is connected to local repository or not, we use (git remote -v) command.
+    
 
     - What command do you use to add the remote
+    ans.To add remote we use (git remote add origin "SSH/HTML link of remote repository") command.
 
   h, When local and remote repository are connected, one can push the changes/files so they are visible
      on github. What would be the structrure of the command ? Do you need to create a pull request?
-
-
-3. Working on an existing project
+     Ans. When local repository and remote repository are connected then just for pushing changes/files we use (git commit -m "message") command to commit files/changes and then we use (git push -u origin master) command to push the files/changes to remote repository, and if you are not the owner of files and doing changing in fork then after doing changings in file you can pull request to file owner for merging these changings to original file. 
+ 
+ 3. Working on an existing project
   a, To get this homework to your computer you needed to copy a remote repository into your machine.
     What were the commands you needed to use?
-
-  b, Do you need to initiate a git repository after cloning a project?
-
+    Ans. To get that files to my local repository i did fork to that remote repository and then i used (git clone "ssh/html link") to get that files in my local repository.
+ 
+ b, Do you need to initiate a git repository after cloning a project?
+  Ans. No, after cloning a project i just commit the changings and push back that to remote repository.
+  
   c, What is the difference between forking and cloning?
+  Ans. Forking creates your own copy of a repository in a remote location (for example, GitHub). Your own copy means that you will be able to contribute changes to your copy of the repository without affecting the original repository. Cloning makes a local copy of a repository, not your own copy.
 
-  d, Can you just push your changes to repository that you don't "own" on github?
+  d, Can you just push your changes to repository that you don't "own" on github? 
+  Ans. No, if i don't own a repository then i can't push changes to that repository but i can do a "pull request" to repository owner to merge that changes with the original repository.
+
