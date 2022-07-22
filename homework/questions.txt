@@ -35,7 +35,7 @@ we went through in class.
 
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
-    ans. 
+    ans. You can use (man command) for a quick manual of a command.
 
   l, With what command do you rename a folder/file in the command line?
 ans. Rename a folder/file we should use command "mv" f /c/user/ desktop name/ folder/file name.
@@ -48,22 +48,27 @@ ans. Rename a folder/file we should use command "mv" f /c/user/ desktop name/ fo
  
   2. Creating a new project
   a, How do you create a new folder (what command) ?
-  ans. Mkdir folder name.
+  ans." Mkdir" folder name.
 
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
-  ans. Git init
+  ans. Git init -b master/main.
+  
   c, What command do you use to create a new file ?
+  ans. type (tuch name-file .txt) creat a new file.
 
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
-
-    - from working directory to the staging area
-
-    - from the staging area to local repository
-
+     ans. 1. Create file using (touch file-name.txt) command
+        2. Add text to file using (echo "text line" > file-name.txt)
+       
+ from working directory to the staging area
+git  add file -name.txt
+ 
+  - from the staging area to local repository
+   git commit -m " our commit"
   e, What does git status do ?
-
+   
   f, How would you check your commit history?
 
   g, To share your project(folder), you will need to create a remote repository.
